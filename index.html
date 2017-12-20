@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <title>Train Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css" />
+    <script src="./assets/logic.js"></script>
+    <!--Link to animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="animated fadeInUp">Train Tracker</h1>
+            </div>
+        </div>
+
+    
+    <div class="panel panel-default animated fadeInUp">
+          <div class="panel-heading">
+                <h3 class="panel-title">Train Schedule</h3>
+          </div>
+          <div class="panel-body">
+                <div class="row" id="tableRow">
+                
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency(min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="trainName"></td>
+                                    <td id="destination"></td>
+                                    <td id="frequency"></td>
+                                    <td id="nextArrival"></td>
+                                    <td id="minutesAway"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                </div>
+          </div>    
+    </div>
+
+    <div class="panel panel-default animated fadeInUp">
+        <div class="panel-heading">
+            <h3 class="panel-title">Add A Train</h3>
+        </div>
+        <div class="panel-body">
+            <p>Train Name</p>
+            <input type="text" name="" id="input${1/(\w+)/\u\1/g}" class="form-control" value="" required="required" pattern="" title="">
+            <br>
+            <p>Destination</p>
+            <input type="text" name="" id="input${1/(\w+)/\u\1/g}" class="form-control" value="" required="required" pattern="" title="">
+            <br>
+            <p>First Train Time (HH:mm (Military Time)</p>
+            <input type="text" name="" id="input${1/(\w+)/\u\1/g}" class="form-control" value="" required="required" pattern="" title="">
+            <br>
+            <p>Frequency (min)</p>
+            <input type="text" name="" id="input${1/(\w+)/\u\1/g}" class="form-control" value="" required="required" pattern="" title="">
+            <br>
+            
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default">Add Train</button>
+            </span>
+            
+        </div>
+    </div>
+    
+
+        
+
+        
+        
+        
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+</body>
+</html>
