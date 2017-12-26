@@ -1,3 +1,10 @@
+h1, h3, p, th, td {
+    font-family: 'Barlow', sans-serif;
+}
+
+.addButton {
+    font-family: 'Barlow', sans-serif;   
+}
 
 
 .jumbotron {
