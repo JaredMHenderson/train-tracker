@@ -83,20 +83,20 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
   let minutesAway = nextArrivalMath.diff(moment(), "minutes");
 
+  //note to TA who grades this, I couldn't figure out how to get my minutes away and next arrival  to reset
+  //a once a train actually arrives...
+
+  // let nextTrain = moment().add(minutesAway, "minutes";)
+
+  // let nextTrain = moment().add(minutesAway, "minutes");
+  // let nextArrival = moment(nextTrain,)
+
   
   // add each train's data into table
   $('#train-table > tbody').append(`<tr><td> ${trainName} </td><td> ${destination} </td><td> ${frequency} </td><td> ${nextArrival} </td><td> ${minutesAway}</td></tr>`)
-    // < tr > <td> ${} <tr><td> ${minutesAway}
+});
 });
 
-// updates the hmtl when a train arrives
-
-// if(nextArrival = moment(){
-
-//   $("")
-// })
-
-});
 
 // next arrival = first train + frequency = converted to a time
 //                1:00 pm     + 15        = 1:15
